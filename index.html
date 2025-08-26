@@ -1,149 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <title>GaboCulture</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GaboCulture</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-    <button id="toggleDarkMode">🌓 Dart mode</button>
 
-    <div class="wapper">
-        <h1>Gabo<span class="color">Culture</span></h1>
-        <nav>
-            <ul>
-                <li><a href="#main-menu">Accueil</a><li>
-                <li><a href="#others">Presentation</a></li>
-                <li><a href="#">culture</a></li>
-                <li><a href="#">Langues</a></li>
-            </ul>
-        </nav>
+  <header>
+  <div class="wapper">
+    <h1>Gabo<span class="color">Culture</span></h1>
+    <button id="menu-toggle" aria-label="Menu mobile">&#9776;</button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#main-menu">Accueil</a></li>
+        <li><a href="#others">Présentation</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Langues</a></li>
+      </ul>
+    </nav>
+    <button id="toggleDarkMode">🌓 Mode sombre</button>
+  </div>
+</header>
 
-    </div>
-   </header>
 
-
-   <section id="main-menu">
-
-    <div class="wapper">
+  <main>
+    <section id="main-menu">
+      <div class="wapper">
         <h2>Portail Culturel du Gabon</h2>
-        <p><strong>Venez découvrir la richesse de la culture gabonaise à tranvers <br>ses langues, musiques, dances, gastronomie,
-        tenues et sites <br>touristiques</strong></p>
+        <p><strong>Venez découvrir la richesse de la culture gabonaise à travers ses langues, musiques, danses, gastronomie, tenues et sites touristiques.</strong></p>
         <a href="#" class="button1">En savoir plus</a>
+      </div>
+    </section>
 
-    </div>
+    <section class="slider">
+      <div class="slide" id="slide-0"></div>
+      <div class="slide" id="slide-1"></div>
+      <div class="slide" id="slide-2"></div>
+      <div class="slide" id="slide-3"></div>
+      <div class="slide" id="slide-4"></div>
+      <div class="slide" id="slide-5"></div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+      <div class="dots"></div>
+    </section>
 
-   </section>
+    <section class="slogan">
+      <h3>GaboCulture</h3>
+      <p>La vitrine officielle de la culture gabonaise. Une plateforme pour préserver, valoriser et transmettre notre patrimoine en explorant l’identité culturelle gabonaise de façon structurée et moderne.</p>
+      <h4>✊ Patriotique & identitaire</h4>
+      <ul>
+        <li>Gabon d’hier, d’aujourd’hui et de demain.</li>
+        <li>Notre culture, notre fierté.</li>
+        <li>Une nation, une culture, un héritage.</li>
+      </ul>
+    </section>
 
-   <section class="slider">
-    
-    <div class="slide" id="slide-0"></div>
-    <div class="slide" id="slide-1"></div>
-    <div class="slide" id="slide-2"></div>
-    <div class="slide" id="slide-3"></div>
-    <div class="slide" id="slide-4"></div>
-    <div class="slide" id="slide-5"></div>
-    
-    </div>
-    
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
-    <div class="dots"></div>
-  </section>
-  <div class="slogan">
-  <h3>GaboCulture</h3>
-    <p>La vitrine officielle de la culture gabonaise, Une plateforme pour préserver, valoriser et transmettre notre patrimoine 
-        en explorons l’identité culturelle gabonaise, de façon structurée et moderne. <br><br>
-        <h4>✊Patriotique & identitaire</h4> <br>
-        <P>*Gabon d’hier, d’aujourd’hui et de demain.</P> <br>
-        <P>*Notre culture, notre fierté.</P> <br>
-        <P>*Une nation, une culture, un héritage.</P> <br>
-
-    </p>
-
-    </div>
-  <section id="others">
-    <div class="cats">
+    <section id="others">
+      <div class="cats">
         <h3>Catégories culturelles</h3>
-
-    </div>
-    <div class="icon-container">
+      </div>
+      <div class="icon-container">
         <div class="icon">
-            <img src="images/lang.jpg" alt="Langues gabonaises">
-            <h3>Langues <br>gabonaises</h3>
-            <p>Presentation des principales langues du Gabon</p>
-
+          <img src="images/lang.jpg" alt="Langues gabonaises">
+          <h3>Langues <br>gabonaises</h3>
+          <p>Présentation des principales langues du Gabon</p>
         </div>
         <div class="icon">
-            <img src="images/music.png" alt="music & danse">
-            <h3>Musique & <br>Danse</h3>
-            <p>Exploration de rythines et danses traditionnels</p>
-
+          <img src="images/music.png" alt="Musique et danse">
+          <h3>Musique & <br>Danse</h3>
+          <p>Exploration des rythmes et danses traditionnels</p>
         </div>
         <div class="icon">
-            <img src="images/gastro.jpg" alt="gastronomie">
-            <h3>Gastronomie</h3>
-            <p>Découverte des plats et recette gabonaises</p>
-
+          <img src="images/gastro.jpg" alt="Gastronomie gabonaise">
+          <h3>Gastronomie</h3>
+          <p>Découverte des plats et recettes gabonaises</p>
         </div>
         <div class="icon">
-            <img src="images/tenue.png" alt="tenues traditionnelles">
-            <h3>Tenue <br>Traditionnelles</h3>
-            <p>Les vetement et parures traditionnels</p>
-
+          <img src="images/tenue.png" alt="Tenues traditionnelles">
+          <h3>Tenues <br>Traditionnelles</h3>
+          <p>Les vêtements et parures traditionnels</p>
         </div>
         <a href="sites.html" class="icon">
-    <img src="images/site.png" alt="sites touristiques">
-    <h3>Sites <br>Touristiques</h3>
-    <p>Les îles incontournables à visiter</p>
-</a>
+          <img src="images/site.png" alt="Sites touristiques">
+          <h3>Sites <br>Touristiques</h3>
+          <p>Les lieux incontournables à visiter</p>
+        </a>
+      </div>
+    </section>
 
-
-    </div>
-
-  </section>
-
-  <section id="galerie-container">
-    <div class="title">
+    <section id="galerie-container">
+      <div class="title">
         <h1>Galerie</h1>
-    </div>
-    
-    <div class="galerie">
-        <img src="images/d9.jpeg" alt="image 9">
-        <img src="images/d3.jpeg" alt="image 9">
-        <img src="images/a6.png" alt="image 1">
-        <img src="images/c2.jpg" alt="image 2">
-        <img src="images/c8.jpg" alt="image 8">
-        <img src="images/c4.png" alt="image 4">
-        <img src="images/c5.jpg" alt="image 5">
-        <img src="images/c6.jpg" alt="image 6">
-        <img src="images/c7.png" alt="image 7">
-        <img src="images/c3.jpg" alt="image 3">
-        <img src="images/b.jpg" alt="image 9">
-        <img src="images/d1.jpeg" alt="image 9">
-        <img src="images/a3.png" alt="image 10">
-    </div>
-     <div class="bouton-voir-plus">
-    <button  class="voir-plus"><a href="galerie.html">👁️ Voir plus</a></button>
-    </div>
-    <div id="popup" class="popup">
+      </div>
+      <div class="galerie">
+        <img src="images/d9.jpeg" alt="Danse traditionnelle">
+        <img src="images/d3.jpeg" alt="Cérémonie culturelle">
+        <img src="images/a6.png" alt="Art visuel">
+        <img src="images/c2.jpg" alt="Tenue traditionnelle">
+        <img src="images/c8.jpg" alt="Gastronomie locale">
+        <img src="images/c4.png" alt="Musique gabonaise">
+        <img src="images/c5.jpg" alt="Site touristique">
+        <img src="images/c6.jpg" alt="Artisanat">
+        <img src="images/c7.png" alt="Langue locale">
+        <img src="images/c3.jpg" alt="Fête culturelle">
+        <img src="images/b.jpg" alt="Portrait gabonais">
+        <img src="images/d1.jpeg" alt="Danse rituelle">
+        <img src="images/a3.png" alt="Symbole culturel">
+      </div>
+      <div class="bouton-voir-plus">
+        <a href="galerie.html" class="voir-plus">👁️ Voir plus</a>
+      </div>
+      <div id="popup" class="popup">
         <span id="closeBtn">&times;</span>
-        <img id="popupImage" src="" alt="image agrandie">
-    </div>
-     
-  </section>
-  <section id="heros">
-    <div class="heros-cult">
-        <h1>Heros culturels</h1>
-        
+        <img id="popupImage" src="" alt="Image agrandie">
+      </div>
+    </section>
 
-    </div>
-
-  </section>
-
+    <section id="heros">
+      <div class="heros-cult">
+        <h1>Héros culturels</h1>
+        <!-- Contenu à venir -->
+      </div>
+    </section>
+  </main>
 
   <script src="js/slider.js"></script>
   <script src="js/script.js"></script>

@@ -1,25 +1,27 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ========== RESET & BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: #fff;
+  color: #000;
 }
-#toggleDarkMode {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  background-color: aqua;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
+
+ul {
+  list-style: none;
 }
-/* Mode sombre */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========== DARK MODE ========== */
 .dark-mode {
   background-color: #121212;
   color: #f0f0f0;
@@ -29,14 +31,13 @@ body{
   background-color: #333;
 }
 
-.dark-mode nav a {
+.dark-mode nav a,
+.dark-mode .slogan,
+.dark-mode .galerie img,
+.dark-mode .icon {
   color: #f0f0f0;
-}
-
-.dark-mode .icon,
-.dark-mode .galerie img {
-  border-color: #FFD100;
   background-color: #1e1e1e;
+  border-color: #FFD100;
 }
 
 .dark-mode .button1 {
@@ -44,137 +45,112 @@ body{
   color: #121212;
 }
 
-.dark-mode .slogan {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-}
-
+/* ========== HEADER ========== */
 header {
-    height: 100px;
-    background-color: #f7cf21;
-    
-}
- header h1{
-    font-size: 35px;
-    margin-top: 20px;
-    margin-left: 10px;
-    float: left;
-    color: white;
-}
-ul{
-    list-style: none;
-}
-header nav ul li a{
-    text-decoration: none;
-     color: white;
-    margin: 0 15px;
-    transition: color 0.3s ease;
+  background-color: #f7cf21;
+  padding: 10px 0;
 }
 
-    
-
-header nav{
-    float: right;
-    margin-top: 40px ;
-    width: 500px;
-    
-}
-header nav ul li{
-    display: inline-block;
-
-}
-header nav ul li a{
-    margin-right: 20px;
-    font-weight: bold;
+.wapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header nav a:hover {
-  color: aqua;  /* jaune du drapeau au survol */
-}
-.wapper{
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
+header h1 {
+  font-size: 30px;
+  color: white;
 }
 
-#main-menu{
-    height: 450px;
-    background-image: url(../images/a6.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+.color {
+  color: aqua;
 }
 
-h2{
-    text-align: center;
-    font-size: 40px;
-    padding: 150px 0 40px 0;
-    margin-bottom: 20px;
-    color: #fff;
-}
-.wapper P{
-    text-align: center;
-    font-size: 17px;
-    margin-top: 5px;
-    color: #fff;
-}
-#main-menu a{
-    
-    background-color: #FFD100;
-}
-.button1{
-    display: block;
-    height: 50px;
-    width: 120px;
-    text-align: center;
-    color: #fff;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 3px;
-    line-height: 50px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.button1:hover{
-    color: aqua;
+#menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
-
-
-
-/*Slider*/
-
-
-.slogan{
-    background-color: #f7cf21;
-    color: #fff;
+#toggleDarkMode {
+  padding: 10px 15px;
+  background-color: aqua;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.slogan h3{
-    text-align: left;
-    font-size: 50px;
+nav {
+  display: flex;
 }
-.slogan h4{
-    text-align: left;
-    font-size: 25px;
+
+nav ul {
+  display: flex;
+  gap: 15px;
 }
-.slogan p{
-    text-align: left;
-    font-size: 20px;
-    margin-top: 13px;
-    
+
+nav ul li a {
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
 }
+
+nav a:hover {
+  color: aqua;
+}
+
+/* ========== MAIN MENU ========== */
+#main-menu {
+  background: url('../images/a6.png') center/cover no-repeat;
+  text-align: center;
+  padding: 100px 20px 40px;
+}
+
+#main-menu h2 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#main-menu p {
+  font-size: 17px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.button1 {
+  display: inline-block;
+  height: 50px;
+  width: 120px;
+  line-height: 50px;
+  background-color: #FFD100;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  margin: 30px auto;
+  transition: color 0.3s ease;
+}
+
+.button1:hover {
+  color: aqua;
+}
+
+/* ========== SLIDER ========== */
 .slider {
   position: relative;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 60vh;
   overflow: hidden;
-  background-position: center center;
-  float: right;
-  
-  
+  margin: 0 auto;
 }
 
 .slide {
@@ -182,10 +158,14 @@ h2{
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-position: center;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  
-  
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
 }
 
 #slide-0 { background-image: url('../images/a1.png'); }
@@ -195,13 +175,7 @@ h2{
 #slide-4 { background-image: url('../images/d16.jpg'); }
 #slide-5 { background-image: url('../images/d9.jpeg'); }
 
-.slide.active {
-  opacity: 1;
-  z-index: 1;
-}
-
-.prev,
-.next {
+.prev, .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -216,107 +190,102 @@ h2{
 .prev { left: 10px; }
 .next { right: 10px; }
 
-
-.color{
-    color: aqua;
+/* ========== SLOGAN ========== */
+.slogan {
+  background-color: #f7cf21;
+  color: white;
+  padding: 20px;
 }
 
-.cats h3{
-    font-size: 35px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-
+.slogan h3 {
+  font-size: 40px;
 }
 
+.slogan h4 {
+  font-size: 25px;
+}
 
+.slogan p {
+  font-size: 20px;
+  margin-top: 13px;
+}
+
+/* ========== ICONES ========== */
 .icon-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .icon {
-  text-decoration: none;
-  color: inherit;
-    width: 220px;
-    height: 220px;
-    padding: 15px;
-    text-align: center;
-    border: 2px solid #f7cf21; 
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 220px;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid #f7cf21;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
+
 .icon:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
+  transform: scale(1.02);
 }
 
 .icon img {
-    width: 50px; 
-    height: auto;
-    margin-bottom: 10px;
-
+  width: 50px;
+  margin-bottom: 10px;
 }
 
 .icon h3 {
-    margin: 10px 0;
-    font-size: 20px;
-    
+  font-size: 20px;
+  margin: 10px 0;
 }
+
 .icon p {
-    margin-top: 20px;
-    font-size: 15px;
-}
-#galerie-container{
-    border: 10px solid;
-    border-radius: 10px;
-    box-shadow: none;
-}
-#galerie-container a{
-    text-decoration: none;
-}
-#galerie-container .title h1 {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
- 
+  font-size: 15px;
+  margin-top: 20px;
 }
 
-@media (max-width: 600px) {
-  #galerie-container .galerie img {
-    width: 100%;
-  }
-}
-
-
-#galerie-container .galerie {
-  display: flex;
-  flex-wrap: wrap;              
-  justify-content: center;      
-  gap: 20px;                    
-  margin-top: 10px;
-}
-
-#galerie-container .galerie img {
-    background-color: #f7cf21;
-  width: 200px;
-  height: auto;
+/* ========== GALERIE ========== */
+#galerie-container {
+  border: 10px solid;
+  border-radius: 10px;
   padding: 20px;
+}
+
+#galerie-container .title h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galerie img {
+  width: 100%;
+  max-width: 200px;
+  padding: 20px;
+  background-color: #f7cf21;
   border: 5px solid white;
   border-radius: 10px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Effet au survol */
-#galerie-container .galerie img:hover {
-  transform: scale(1.05);       /* Zoom léger */
-  filter: brightness(1.1);      /* Teinte plus vive */
+.galerie img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
   cursor: pointer;
 }
 
+/* ========== BOUTON VOIR PLUS ========== */
 .bouton-voir-plus {
   text-align: center;
   margin-top: 20px;
@@ -337,8 +306,7 @@ h2{
   background-color: aqua;
 }
 
-
-/* Fenêtre pop-up */
+/* ========== POPUP IMAGE ========== */
 .popup {
   display: none;
   position: fixed;
@@ -359,9 +327,6 @@ h2{
   border-radius: 10px;
 }
 
-
-
-/* Bouton pour fermer */
 #closeBtn {
   position: absolute;
   top: 30px;
@@ -372,6 +337,53 @@ h2{
   font-weight: bold;
 }
 
+/* ========== RESPONSIVE MENU ========== */
+@media (max-width: 768px) {
+  .wapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  #menu-toggle {
+    display: block;
+    margin-top: 10px;
+  }
 
+  nav {
+    display: none;
+    width: 100%;
+    background-color: #f7cf21;
+    padding: 10px 0;
+  }
 
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    color: white;
+  }
+
+  .slider {
+    height: 40vh;
+  }
+
+  .slogan h3 {
+    font-size: 30px;
+  }
+
+  .slogan h4 {
+    font-size: 20px;
+  }
+
+  .slogan p {
+    font-size: 16px;
+  }
+}

@@ -68,4 +68,13 @@ function toggleDetails(element) {
     element.classList.toggle("active");
 }
 
+// Menu mobile responsive
+const menuToggle = document.getElementById("menu-toggle");
+const mainNav = document.getElementById("main-nav");
+
+menuToggle.addEventListener("click", () => {
+  mainNav.classList.toggle("active");
+});
+
+
 

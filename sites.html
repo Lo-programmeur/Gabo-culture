@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>GaboCulture</title>
+</head>
+<body>
+   <header>
+    <button id="toggleDarkMode">🌓 Dart mode</button>
+
+    <div class="wapper">
+        <h1>Gabo<span class="color">Culture</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a><li>
+                <li><a href="#others">Presentation</a></li>
+                <li><a href="#">culture</a></li>
+                <li><a href="#">Langues</a></li>
+            </ul>
+        </nav>
+
+    </div>
+   </header>
+
+  <section class="site">
+    <h1>🌍 Sites touristiques du Gabon</h1>
+
+    <h2 id="parcs">🌿 Parcs Nationaux</h2>
+    <div class="parcs-grid">
+      <div class="loango" onclick="toggleDetails(this)">
+        <img src="images/e1.png" alt="Loango" />
+        <h3>Parc National de Loango</h3>
+        <p class="short">Plages, éléphants, traditions locales.</p>
+        <div class="details">
+          <p>
+            Niché entre océan, lagunes et forêt tropicale, le parc national de Loango est un joyau de la biodiversité gabonaise.
+            Ce lieu magique offre une scène unique où éléphants, buffles et hippopotames s’aventurent sur des plages sauvages bordées de palmiers.
+          </p>
+          <ul>
+            <li>🌊 Faune côtière exceptionnelle</li>
+            <li>🐘 Écotourisme immersif</li>
+            <li>🌴 Patrimoine naturel authentique</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="loango" onclick="toggleDetails(this)">
+        <img src="images/e2.png" alt="Lopé" />
+        <h3>Parc National de la Lopé</h3>
+        <p class="short">Savane, forêt, gravures rupestres.</p>
+        <div class="details">
+          <p>
+            Le Parc National de la Lopé mêle savane dorée et forêt dense. Il abrite éléphants, mandrills, gorilles et antilopes.
+            Des gravures rupestres témoignent de la présence humaine il y a plus de 4 000 ans.
+          </p>
+          <ul>
+            <li>🐘 Observation d'animaux en milieu naturel</li>
+            <li>📜 Patrimoine historique et archéologique</li>
+            <li>🌳 Paysages contrastés et inspirants</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="loango" onclick="toggleDetails(this)">
+        <img src="images/e3.png" alt="Ivindo" />
+        <h3>Parc National d’Ivindo</h3>
+        <p class="short">Chutes de Kongou, biodiversité rare.</p>
+        <div class="details">
+          <p>
+            Le Parc National d’Ivindo est un sanctuaire forestier avec les chutes de Kongou, Djidji et Mingouli.
+            Il abrite le pangolin géant, le léopard africain et plusieurs primates rares.
+          </p>
+          <ul>
+            <li>💦 Chutes spectaculaires</li>
+            <li>🦉 Biodiversité exceptionnelle</li>
+            <li>🛶 Exploration fluviale en pirogue</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="loango" onclick="toggleDetails(this)">
+        <img src="images/e4.png" alt="Moukalaba-Doudou" />
+        <h3>Parc de Moukalaba-Doudou</h3>
+        <p class="short">Gorilles, collines verdoyantes.</p>
+        <div class="details">
+          <p>
+            Ce parc offre une expérience sauvage inégalée. On y retrouve des gorilles, chimpanzés, céphalophes et une multitude d’oiseaux rares.
+            C’est aussi un territoire vivant, en harmonie avec les peuples locaux.
+          </p>
+          <ul>
+            <li>🦍 Observation de gorilles</li>
+            <li>🐾 Randonnées écotouristiques</li>
+            <li>🌄 Paysages de collines et forêts tropicales</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="loango" onclick="toggleDetails(this)">
+        <img src="images/e5.png" alt="Akanda" />
+        <h3>Parc National d’Akanda</h3>
+        <p class="short">Mangroves, oiseaux migrateurs.</p>
+        <div class="details">
+          <p>
+            Le Parc National d’Akanda est un écrin côtier vital pour la biodiversité. Il abrite des milliers d’oiseaux migrateurs.
+            Il protège aussi le littoral contre l’érosion et soutient les communautés locales.
+          </p>
+          <ul>
+            <li>🦩 Observation d’oiseaux migrateurs</li>
+            <li>🌊 Mangroves et écosystèmes rares</li>
+            <li>🛶 Promenades en pirogue</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="culturels">🏛️ Sites historiques et culturels</h2>
+    <div class="parcs-grid">
+      <div class="loango" onclick="toggleDetails(this)">
+        <img src="images/e6.png" alt="Sainte-Anne" />
+        <h3>Mission Sainte-Anne</h3>
+        <p class="short">Architecture Eiffel, spiritualité, lagune Fernan-Vaz.</p>
+        <div class="details">
+          <p>
+            Construite en 1889, la Mission Sainte-Anne est une œuvre emblématique du patrimoine gabonais.
+            Sa charpente métallique aurait été conçue par les ateliers de Gustave Eiffel.
+          </p>
+          <ul>
+            <li>🛐 Architecture spirituelle et historique</li>
+            <li>🌅 Panorama lagunaire</li>
+            <li>🪶 Point d’ancrage culturel du Gabon</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

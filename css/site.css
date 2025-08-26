@@ -1,0 +1,94 @@
+
+
+.site {
+  padding: 30px;
+  text-align: center;
+  background-color: #e7e9e8;
+}
+
+.site h1 {
+  font-size: 36px;
+  color: #008037;
+  margin-bottom: 20px;
+}
+
+.site h2 {
+  font-size: 28px;
+  color: #008037;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.parcs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.loango {
+  background-color: #e9e2c6;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 30px);
+  box-sizing: border-box;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.loango:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.loango img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.loango h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.loango p.short {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.details {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+  text-align: left;
+}
+
+.loango.active .details {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .loango {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 600px) {
+  .loango {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
